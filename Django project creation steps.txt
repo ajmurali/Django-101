@@ -1,0 +1,46 @@
+creating Django project:
+Go to the directory where the project has to be created
+
+step 1 - creating a virtual environment
+cmd= pip install pipenv
+
+step 2 - installing django in the directory
+cmd = pip install django(or django(version))
+
+step 3 - getting into the shell
+cmd = pipenv shell
+
+step 4 - creating the Django project
+cmd = django-admin startproject (projectname)
+
+step 5 - applying migrations
+cmd = python manage.py migrate
+
+step 6 - checking the server
+cmd = python manage.py runserver 0.0.0.0:8000
+
+step 7 - creating the superuser
+cmd =  python manage.py createsuperuser
+" Username (leave blank to use 'mural'): ajmurali
+Email address: muralikandhan002@gmail.com
+Password: 
+Password (again):
+Superuser created successfully. "
+
+step 8 - creating the Django app inside our Django project
+cmd = python manage.py startapp (app_name)
+
+step 9 - adding app_name in the installed apps of 'settings.py'
+
+
+
+
+
+Django creating a web page in a existing site
+
+In user created urls file set the url route -> create a view -> import the created view  
+goto views.py import the relevant view (ex-> FormView or DetailView)
+create the class that inherits the view that is imported in views.py
+under the class set the template name
+
+
